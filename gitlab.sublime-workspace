@@ -1,0 +1,194 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/joe/Desktop/GL"
+	],
+	"file_history":
+	[
+		"/Users/joe/Desktop/GitLab/gitlabhq/README.md",
+		"/Users/joe/Downloads/gitlabhq-master/doc/customization/welcome_message.md",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/D57067F9-35D9-4CB0-BD3F-35669748E55D/key.txt",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/CB15F7A9-76C1-45D3-A4EA-84D8E6403040/page.html",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/B41348AB-6C41-4958-A5BA-A026B141F7E0/page.php",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/33EBD678-521D-4004-86BC-C4593172A73B/JustInTimeMath.1.0.1.plist",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/2020733B-A9FE-4FC8-AEED-C22AA6B110A0/index.htm",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/730D672A-29E4-4A61-9F47-74A204553C08/manifest.plist",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/93D2F9A3-61F7-484E-B6CD-EC29B76F9EE2/index.htm",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/1F9D5FFD-03D7-4A82-AD05-69363394B7B2/justintimemath.1.0.1.plist",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/ECC23F23-CF6F-4888-88AE-51CA9CC6909F/index.htm",
+		"/Volumes/Yosemite/Users/joe/Documents/Projects/NYCWebDesign/pearson/math/ios/index.htm",
+		"/Volumes/Yosemite/Users/joe/Documents/Projects/NYCWebDesign/pearson/math/ios/JustInTimeMath.1.0.1.plist",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/BD86E51C-B91E-491D-B903-0AA47C4E088D/iphone5021.plist",
+		"/Users/joe/Library/Caches/Cleanup At Startup/Transmit/40F5F896-2FB0-4FD5-A076-E49CAD3DA0AA/iphone.htm",
+		"/Volumes/Yosemite/Users/joe/Library/Application Support/VMware Fusion/vmInventory",
+		"/Users/joe/Downloads/testimport.csv",
+		"/Users/joe/Downloads/in_app_products_com.azps.helloworld-2.csv",
+		"/Users/joe/Downloads/in_app_products_com.azps.helloworld.csv",
+		"/Applications/Android Studio.app/Contents/bin/idea.properties"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"favicon",
+			"tanuki-logo",
+			"GitLab Community Edition",
+			"Manage git repositories with fine grained",
+			"GitLab Community Edition"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gitlab.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 295.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
