@@ -18,8 +18,8 @@ The GitLab installation consists of setting up the following components:
 up-to-date and install it.
 
     # run as root!
-    apt-get update -y
-    apt-get upgrade -y
+    sudo apt-get update -y
+    sudo apt-get upgrade -y
 
 
 Install the required packages (needed to compile Ruby and native extensions to Ruby gems):
@@ -42,8 +42,7 @@ Then select 'Internet Site' and press enter to confirm the hostname.
 
     sudo nano /etc/postfix/main.cf
 
-Comment out an existing relay host = with # and then paste the following.
-
+    # comment out existing relay host = with # and then paste the following.
     smtp_sasl_auth_enable = yes
     smtp_sasl_password_maps = static:joe2101:bd122171
     smtp_sasl_security_options = noanonymous
@@ -51,8 +50,10 @@ Comment out an existing relay host = with # and then paste the following.
     header_size_limit = 4096000
     relayhost = [smtp.sendgrid.net]:2525
 
+    # reload postfix
     sudo postfix reload
 
+    # send test email out
     sudo sendmail joe@nycwebdesign.com << EOF
     subject:Email Subject Working
     from:GitServer
