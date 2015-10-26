@@ -184,6 +184,8 @@ OR
     4. email_from: git.alert@nycwebdesign.com
     5. email_display_name: NYCWD Git
 
+    # Save and exit gitlab.yml
+
     # Copy the example secrets file
     sudo -u git -H cp config/secrets.yml.example config/secrets.yml
     sudo -u git -H chmod 0600 config/secrets.yml
