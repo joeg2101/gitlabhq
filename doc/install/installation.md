@@ -162,7 +162,7 @@ We recommend using a PostgreSQL database. For MySQL check [MySQL setup guide](da
     # Clone GitLab repository
     sudo -u git -H git clone https://gitlab.com/gitlab-org/gitlab-ce.git -b 8-1-stable gitlab
 
-OR
+OR for NYCWD customization use this repository
 
     sudo -u git H git clone https://git.nycwebdesign.com/NYCWD/NYCWD-Git.git -b master gitlab
 
