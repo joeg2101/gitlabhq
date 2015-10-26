@@ -227,10 +227,6 @@ OR
     # Configure Redis connection settings
     sudo -u git -H cp config/resque.yml.example config/resque.yml
 
-**Important Note:** Make sure to edit both `gitlab.yml` and `unicorn.rb` to match your setup.
-
-**Note:** If you want to use HTTPS, see [Using HTTPS](#using-https) for the additional steps.
-
 ### Configure GitLab DB Settings
 
     # PostgreSQL only:
@@ -275,6 +271,8 @@ GitLab Shell is an SSH access and repository management software developed speci
     sudo -u git -H make
 
 ### Initialize Database and Activate Advanced Features
+    
+    cd /home/git/gitlab
 
     sudo -u git -H bundle exec rake gitlab:setup RAILS_ENV=production
 
