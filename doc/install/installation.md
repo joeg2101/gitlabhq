@@ -86,8 +86,7 @@ downloads for other platforms at the [Go download
 page](https://golang.org/dl).
 
     curl -O --progress https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
-    echo '46eecd290d8803887dec718c691cc243f2175fe0  go1.5.1.linux-amd64.tar.gz' | shasum -c - && \
-      sudo tar -C /usr/local -xzf go1.5.1.linux-amd64.tar.gz
+    echo '46eecd290d8803887dec718c691cc243f2175fe0  go1.5.1.linux-amd64.tar.gz' | shasum -c - && sudo tar -C /usr/local -xzf go1.5.1.linux-amd64.tar.gz
     sudo ln -sf /usr/local/go/bin/{go,godoc,gofmt} /usr/local/bin/
     rm go1.5.1.linux-amd64.tar.gz
 
