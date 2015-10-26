@@ -292,12 +292,6 @@ Download the init script (will be `/etc/init.d/gitlab`):
 
     sudo cp lib/support/init.d/gitlab /etc/init.d/gitlab
 
-And if you are installing with a non-default folder or user copy and edit the defaults file:
-
-    sudo cp lib/support/init.d/gitlab.default.example /etc/default/gitlab
-
-If you installed GitLab in another directory or as a user other than the default you should change these settings in `/etc/default/gitlab`. Do not edit `/etc/init.d/gitlab` as it will be changed on upgrade.
-
 Make GitLab start on boot:
 
     sudo update-rc.d gitlab defaults 21
@@ -332,17 +326,39 @@ Check if GitLab and its environment are configured correctly:
 
 ### Site Configuration
 
+Install an UnZip app
+    sudo apt-get install unzip
+
+    cd /etc/ssl
+    sudo wget girellini.com/NYCWDCerts.zip
+
+    sudo unzip NYCWDCerts.zip
+
+
+Download the SSL's for the site
+
 Copy the example site config:
 
     sudo cp lib/support/nginx/gitlab-ssl /etc/nginx/sites-available/gitlab-ssl
     sudo ln -s /etc/nginx/sites-available/gitlab-ssl /etc/nginx/sites-enabled/gitlab-ssl
 
-Make sure to edit the config file to match your setup:
+    Make sure to edit the config file to match your setup:
 
     # Change YOUR_SERVER_FQDN to the fully-qualified https domain name of your host serving GitLab.
     # If using Ubuntu default nginx install:
-    sudo rm -f /etc/nginx/sites-enabled/default
     sudo editor /etc/nginx/sites-available/gitlab-ssl
+
+    # Change YOUR_SERVER_FQDN in 2 places, one http site and https site.
+    server_name git.nycwebdesign.com;
+
+    # Also add your ssl's to the /etc/ssl folder like so
+    # The path must match the GitLab Shell above "/etc/ssl"
+    ssl_certificate /etc/ssl/git.nycwebdesign.com.crt;
+    ssl_certificate_key /etc/ssl/git.nycwebdesign.com.key;
+
+    # Delete the default site to stop port conflict.
+    sudo rm -f /etc/nginx/sites-enabled/default
+
 
 ### Test Configuration
 
@@ -361,7 +377,8 @@ You should receive `syntax is okay` and `test is successful` messages. If you re
 ### Double-check Application Status
 
 To make sure you didn't miss anything run a more thorough check with:
-
+    
+    cd /home/git/gitlab/
     sudo -u git -H bundle exec rake gitlab:check RAILS_ENV=production
 
 If all items are green, then congratulations on successfully installing GitLab!
